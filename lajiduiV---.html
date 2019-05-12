@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" href="#1">
+	        <span class="mui-icon mui-icon-trash"></span>
+	        <span class="mui-tab-label" >垃圾堆</span>
+	    </a>
+	    <a class="mui-tab-item" href="#2">
+	        <span class="mui-icon mui-icon-starhalf"></span>
+	        <span class="mui-tab-label">穷丝玩物</span>
+	    </a>
+	    <a class="mui-tab-item" href="#3">
+	        <span class="mui-icon mui-icon-flag"></span>
+	        <span class="mui-tab-label">玩世界</span>
+	    </a>
+	    <a class="mui-tab-item" href="#4">
+	        <span class="mui-icon mui-icon-gear"></span>
+	        <span class="mui-tab-label">我们</span>
+	    </a>
+	</nav>
+<div class="mui-content">
+    <div id="1" class="mui-active mui-control-content mui-title">
+             
+             
+             
+    <iframe src="https://www.lanzous.com/b706968" width="100%" height="900px" frameborder="0"></iframe> 
+         
+             
+       
+    </div>
+    <div id="2" class="mui-control-content mui-title">
+              
+              
+              
+              
+              
+    <iframe src="https://www.lanzous.com/b706966" width="100%" height="900px" frameborder="0"></iframe>     
+              
+              
+              
+              
+              
+    </div>
+    <div id="3" class="mui-control-content mui-title">
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    	       
+    </div>
+    <div id="4" class="mui-control-content">
+    <a class="mui-navigate-right"  href="#11">
+    <div class="mui-card">
+    	<div class="mui-card-header">
+    	</div>
+    	<div class="mui-card-content-inner">赞赏</div>
+    </div>
+    </a>
+    
+    <a class="mui-navigate-right"  href="#12">
+    <div class="mui-card">
+    	<div class="mui-card-header">
+    	</div>
+    	<div class="mui-card-content-inner" style="color: #2AC845;">搞洗棍教程（穷丝玩物的软件如何下载）</div>
+    </div>
+    </a>
+    
+    <a class="mui-navigate-right"  href="#13">
+    <div class="mui-card">
+    	<div class="mui-card-header">
+    	</div>
+    	<div class="mui-card-content-inner">联系机神</div>
+    </div>
+    </a>
+    <a class="mui-navigate-right"  href="#14">
+    <div class="mui-card">
+    	<div class="mui-card-header">
+    	</div>
+    	<div class="mui-card-content-inner">关于垃圾堆搞机</div>
+    </div>
+    </a>
+    			<div class="mui-card">
+					<a href="#sheet" id="openSheet">
+						<div class="mui-card-header"></div>
+						<div class="mui-card-content-inner">其他</div>
+					</a>
+						<div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#1612">反馈问题</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#1613">下载最新版 本版本1.0.3</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			      	<a href="#15">小游戏</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#sheet"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+			
+			<div id="15" class="backgroun-img mui-modal">
+				<header class="mui-bar mui-bar-nav">
+                    <a class="mui-icon mui-icon-close mui-pull-right" href="#15"></a>
+                    <h1 class="mui-title">小游戏</h1>
+				</header>
+				<br />
+				<br />
+				<br />
+				<br />
+<SCRIPT LANGUAGE="JavaScript">
+
+function playGame(choice) {
+with (document.game) {
+comp = Math.round((Math.random() * 2) + 1);
+var choicename;
+if (comp == 1) choicename = "石头";
+if (comp == 2) choicename = "布";
+if (comp == 3) choicename = "剪子";
+msg.value = '我选择的是 ' + choicename + ';  ';
+
+switch(choice) {
+case 1 :
+         if (comp == 1) {  draw.value++; msg.value += '平局.'; break; }
+         if (comp == 2) {  loss.value++;  msg.value += '你输了!';     break; }
+         if (comp == 3) {  win.value++; msg.value += '你赢了!';      break; }
+case 2 :
+         if (comp == 1) {  win.value++;  msg.value += '你赢了!';      break; }
+         if (comp == 2) {  draw.value++; msg.value += '平局.'; break; }
+         if (comp == 3) {  loss.value++; msg.value += '你输了!';     break; }
+case 3 :
+         if (comp == 1) {  loss.value++;  msg.value += '你输了!';     break; }
+         if (comp == 2) {  win.value++; msg.value += '你赢了!';      break; }
+         if (comp == 3) {  draw.value++; msg.value += '平局.'; break; }
+      }
+      msg.value += '  再来!';
+   }
+}
+</script>
+<center>
+<form name=game>
+<table border=1 cellpadding=5>
+<tr>
+<td align=center>您的选择</td>
+<td align=center><a href="javascript:void(0);" onClick="playGame(1);"><img src="images/ROCK.GIF" width=29 height=23 border=0></a></td>
+<td align=center><a href="javascript:void(0);" onClick="playGame(2);"><img src="images/PAPER.GIF" width=29 height=23 border=0></a></td>
+<td align=center><a href="javascript:void(0);" onClick="playGame(3);"><img src="images/SCISSORS.GIF" width=29 height=23 border=0></a></td>
+</tr>
+<tr>
+<td colspan=4 align=center><input type=text name=msg size=45></td>
+</tr>
+<tr>
+<td colspan=4 align=center>
+<input type=text name=win readonly value="0" size="2"> 赢
+<input type=text name=loss readonly value="0" size="2"> 输
+<input type=text name=draw readonly value="0" size="2"> 平
+
+</td>
+</tr>
+</table>
+</form>
+点击相应图标开始比赛
+</center>
+
+
+			</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="1612" class="backgroun-img mui-modal">
+				<header class="mui-bar mui-bar-nav">
+                    <a class="mui-icon mui-icon-close mui-pull-right" href="#1612"></a>
+                    <h1 class="mui-title">反馈</h1>
+				</header>
+    <iframe src="http://182525.wap.erpabc.cn/wap/guest_book.php?username=182525" width="100%" height="900px"></iframe>
+        </div>
+    
+    
+    
+    
+    
+<script type="text/javascript">
+<script type="text/javascript">function change(theID) {var disp = document.getElementById("display");disp.innerHTML = document.getElementById(theID).innerHTML;}function createXmlHttp() {try {return new XMLHttpRequest();
+
+} catch(e1) { try {return new ActiveXObject("Msxml2.XMLHTTP");
+
+} catch(e2) { try {return new ActiveXObject("Microsoft.XMLHTTP");
+
+} catch(e3) {return null;
+
+} } }}
+
+function getPage(path) {var req = createXmlHttp();
+
+if (req) {req.open("GET", path, false);req.send("");
+
+if (req.status == "200") {document.getElementById("display").innerHTML = req.responseText;
+
+} else {alert("抓取" + path + "出错!");</script>
+</script>
+    
+     <div id="1613" class="backgroun-img mui-modal">
+				<header class="mui-bar mui-bar-nav">
+                    <a class="mui-icon mui-icon-close mui-pull-right" href="#1613"></a>
+                    	<br />
+				<br />
+				<br />
+                    
+                    <h1 class="mui-title">下载最新版本</h1>
+				</header>
+				<br />
+				<br />
+				<br />
+<div id="testdiv"></div>
+         <div class="mui-title">
+<div><script src="xxx.js" type="text/javascript"></script></div>
+         	<a href="https://github.com/dark-purple-deep-red/lajidui-android/raw/master/%E5%9E%83%E5%9C%BE%E5%A0%86.apk" class="mui-btn mui-btn-blue">点此以下载</a>
+         </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="11" class="mui-modal">
+				<header class="mui-bar mui-bar-nav">
+					
+					<a class="mui-icon mui-icon-close mui-pull-right" href="#11"></a>
+					<h1 class="mui-title">赞赏</h1>
+				</header>
+				<div class="mui-content" style="height: 100%;">
+					<br />
+				 <div class="mui-popup-title mui-content">
+	    	加我为好友向我赞赏
+	    </div>
+
+
+
+
+
+
+
+	    <br />
+	    <br />
+	    <br />
+	    <div class="mui-popup-title">
+	    	MY QQ:1729706881
+	    </div>
+	    <div class="mui-popup-title">
+	    	MY 微信：chen2183366295
+	    </div>
+	    <div class="mui-popup-title">
+	    	MY 电子邮箱：czfnice@qq.com
+	    </div>
+	    <br />
+	    <br />
+	    <div class="mui-popup-title">
+	    	谢谢
+	    </div>
+	    <div class="mui-popup-title">
+	    	谢谢
+	    </div>
+	    <div class="mui-popup-title mui-content">
+	    	衷心地感谢我的朋友们
+	    </div>
+	    <div class="mui-popup-title">@^@</div>
+				</div>
+			</div>
+    
+    <div id="12" class="mui-modal">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-icon-close mui-pull-right" href="#12"></a>
+					<h1 class="mui-title">教程</h1>
+				</header>
+				<div class="mui-content" style="height: 100%;">
+					<br />
+				<div class="mui-popup-title mui-content" >你好，现在驾驭我们的穷丝玩物吧！</div>
+		<div class="mui-popup-title">首先</div>
+		<div class="mui-popup-title">联系客服（我跟你说啊“客服是‘机神’”缭TA吧！</div>
+		<div class="mui-popup-title">机神QQ：1729706881</div>
+		<div class="mui-popup-title">机神微信：chen2183366295</div>
+		<div class="mui-popup-title">机神邮箱：czfnice@qq.com</div>
+	    <br />
+		<br />
+		<br />
+		<div class="mui-popup-title" style="color: #007AFF;">发送如下格式的 消息/信件</div>
+		<br />
+		<div class="mui-popup-title" style="color: #8A6DE9;">‘你要下载的软件名称'=‘你的微信号（用于支付验证）’</div>
+		<br />
+		<div class="mui-popup-title" style="color: #EC971F;">列如：垃圾堆=chen2183366295</div>
+		<br />
+		<div class="mui-popup-title" style="color: #007AFF;">待回复后，根据要求支付对应金额</div>
+		<div class="mui-popup-title" style="color: #007AFF;">即可获得‘提取码’/‘下载链接'</div>
+	    <br />
+		<br />
+		<br />
+		<div class="mui-title" style="color: #DD524D;">注：大部分只收 1元 费用，别被坑了</div>
+				</div>
+			</div>
+			
+			<div id="13" class="mui-modal">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-icon-close mui-pull-right" href="#13"></a>
+					<h1 class="mui-title">联系陈铁匠（陈泽锋)</h1>
+				</header>
+				<div class="mui-content" style="height: 100%;">
+					<br />
+		<div class="mui-popup-title mui-content">用于加好友and商业合作</div>
+		<div class="mui-popup-title mui-content">我的QQ：1729706881</div>
+		<div class="mui-popup-title">我的微信：chen2183366295</div>
+		<div class="mui-popup-title">电子邮箱：czfnice@qq.com</div>
+
+		<br />
+		<div class="mui-input-row">
+		    <label>体验一下垃圾语音输入法</label>
+		    <input type="text" class="mui-input-speech mui-input-clear" placeholder="语音输入">
+		</div>
+			
+		  </div>
+		</div>
+
+				</div>
+			</div>
+			
+			<div id="14" class="mui-modal">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-icon-close mui-pull-right" href="#14"></a>
+					<h1 class="mui-title">关于垃圾堆搞机</h1>
+				</header>
+				<div class="mui-content" style="height: 100%;">
+					<br />
+		<div class="mui-popup-title mui-content">此版本号1.0.2</div>
+		<div class="mui-popup-title">
+			意为伟大的诞生
+		</div>
+
+	    <div class="mui-popup-title">
+	    	<p>机神QQ：1729706881</p>
+	    	<p>机神微信：chen2183366295</p>
+	    	<p>机神邮箱：czfnice@qq.com</p>
+	    </div>
+	    <div style="height:10px;"></div>
+	    <div class="mui-title">
+	     <a href="#we"><p style="font: 'arial narrow';color: #8A6DE9;">开发运营参与者 （点击查看）</p></a>
+	     <script>document.write(Date())</script>
+	    <p style="font: gadget;">(c) Copyright 2019 陈泽锋. All Rights Reserved. </p>
+	    <p style="font: gadget;">陈泽锋版权所有</p>
+				</div></div>
+			</div>
+
+			
+			
+
+			<div id="we" class="backgroun-img mui-modal">
+								<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-icon-close mui-pull-right" href="#we"></a>
+					<h1 class="mui-title">开发运营参与者</h1>
+				</header>
+				<br />
+		<br />
+		<br />
+		<div class="mui-popup-title" style="color: #0062CC">暂且有：</div>
+		<div class="mui-popup-title" style="color: red">泽锋</div>
+		<div class="mui-popup-title" style="color: red">子明</div>
+		<div class="mui-popup-title" style="color: blackss">有兴趣的朋友可以每时每刻选择加入进来</div>
+		<div class="mui-popup-title"></div>
+		<div class="mui-popup-title"></div>
+		<div class="mui-popup-title"></div>
+		<div class="mui-popup-title"></div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+        <br />
+		<div class="mui-input-row">
+		    <label>还有</label>
+		    <input type="text" placeholder="你就是开发者（自我安慰）" style="color: #CF2D28;">
+		</div>
+			</div>
+					
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+					
+
+
+</body>
+</html>
